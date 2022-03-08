@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список пользователей</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h3 class="header__title">Список пользователей</h3>
+            <div class="header__top">
+                <div class="search">
+                    <img class="search__img" src="./images/icons/search.svg" alt="Поиск">
+                    <input class="search__input" type="text" placeholder="Поиск по имени или e-mail">
+                </div>
+                <button class="clear-btn">Очистить фильтр</button>
+            </div>
+        </header>
+        <main class="main">
+            <div class="sort">
+                <h4 class="sort__title">Сортировка</h4>
+                <div class="sort__btns">
+                    <button class="sort__btn" id="registration">Дата регистрации</button>
+                    <button class="sort__btn" id="rating">Рейтинг</button>
+                </div>
+            </div>
+            <div class="table">
+                <div class="table__header">
+                    <div class="table__username">Имя пользователя</div>
+                    <div class="table__email">E-mail</div>
+                    <div class="table__date">Дата регистрации</div>
+                    <div class="table__rating">Рейтинг</div>
+                </div>
+                <ul class="content__list"></ul>
+                <div class="pagination-nav"></div>
+                <div class="modal"></div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
